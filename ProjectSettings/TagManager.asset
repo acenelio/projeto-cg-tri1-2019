@@ -7,6 +7,8 @@ TagManager:
   - Coin
   - Monster
   - Projectile
+  - GiftBox
+  - ForbiddenArea
   layers:
   - Default
   - TransparentFX
