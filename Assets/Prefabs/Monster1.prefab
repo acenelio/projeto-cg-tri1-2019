@@ -94,13 +94,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b5972318109a524c9f291b5f4ab7c72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 5397299005220453075}
   prefab: {fileID: 3203785650571790296, guid: 12bee3ae78bb03d4b8f78757500bf7fe, type: 3}
-  waitTime: 2
-  projectileSpeed: 6
+  spawnPoint: {fileID: 5397299005220453075}
+  waitTime: 3
+  projectileSpeed: 3
   directions:
-  - {x: -1, y: 0.1, z: 0}
-  - {x: -1, y: -0.1, z: 0}
+  - {x: -1, y: 0, z: 0}
+  - {x: -0.7, y: 0.7, z: 0}
+  - {x: 0, y: 1, z: 0}
+  - {x: 0.7, y: 0.7, z: 0}
+  - {x: 1, y: 0, z: 0}
+  - {x: 0.7, y: -0.7, z: 0}
+  - {x: 0, y: -1, z: 0}
+  - {x: -0.7, y: -0.7, z: 0}
 --- !u!1 &5397299005220453075
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,9 +119,9 @@ GameObject:
   - component: {fileID: 5397299005220453073}
   - component: {fileID: 5397299005220453072}
   - component: {fileID: 5397299005220453071}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ghost
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

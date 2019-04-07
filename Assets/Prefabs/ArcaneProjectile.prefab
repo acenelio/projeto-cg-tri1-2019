@@ -151,4 +151,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469d3c1fc0826ec4ca5e686f3d8043ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 8
+  delay: 3

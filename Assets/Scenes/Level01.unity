@@ -14174,6 +14174,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinParticles: {fileID: 7205417850972215223, guid: 187ff68524fcd0a40ba170c909445112,
     type: 3}
+  dieParticles: {fileID: 8938682712641601320, guid: 09622a2cf87f3144ab30da9b92b6124b,
+    type: 3}
 --- !u!114 &1512650432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14188,6 +14190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSFX:
     coinPickup: {fileID: 8300000, guid: aae7ed0278430244ab9e192137caec66, type: 3}
+    fail: {fileID: 8300000, guid: 30524ba5c492fd44293e398d132619d0, type: 3}
 --- !u!1001 &1514207327
 PrefabInstance:
   m_ObjectHideFlags: 0
