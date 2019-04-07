@@ -13,16 +13,26 @@ public class PlayerControl : MonoBehaviour
             SceneManager.instance.IncrementCoinCount();
         }
         else if (other.gameObject.CompareTag("ForbiddenArea")) {
+            StopMusicAndTape();
             KillPlayer();
         }
+        else if (other.gameObject.CompareTag("GiftBox")) {
+            StopMusicAndTape();
+            AudioManager.instance.PlaySoundLevelComplete(gameObject);
+            Destroy(gameObject);
+        }
         else if (other.gameObject.layer ==  LayerMask.NameToLayer("Enemies")) {
+            StopMusicAndTape();
             KillPlayer();
         }
     }
 
-    void KillPlayer() {
+    void StopMusicAndTape() {
         Camera.main.GetComponentInChildren<AudioSource>().mute = true;
         SceneManager.instance.SetTapeSpeed(0f);
+    }
+
+    void KillPlayer() {
         SFXManager.instance.ShowDieParticles(gameObject);
         AudioManager.instance.PlaySoundFail(gameObject);
         Destroy(gameObject);
