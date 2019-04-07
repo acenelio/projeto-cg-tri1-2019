@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.UI;
 
 public class SceneManager : MonoBehaviour
 {
@@ -39,5 +40,14 @@ public class SceneManager : MonoBehaviour
 
     public void SetTapeSpeed(float value) {
         TapeSpeed = new Vector3(value, TapeSpeed.y, TapeSpeed.z);
+    }
+
+    public void LoadScene(string sceneName) {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+    }  
+
+    public void ShowLevelCompletePanel() {
+        uiComponents.dialogs.LCPanel.SetActive(true);
+        uiComponents.dialogs.LCTxtScore.text = "" + sceneData.coinCount;
     }
 }

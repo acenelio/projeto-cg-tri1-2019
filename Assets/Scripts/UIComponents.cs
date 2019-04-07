@@ -17,6 +17,13 @@ public class UIComponents
         [Header("Other")]
         public GameObject panelHud;
     }
+    [Serializable]
+    public class Dialogs {
+        public GameObject LCPanel;
+        public Text LCTxtScore;
+    }
 
     public Hud hud;
+    public Dialogs dialogs;
+
 }
