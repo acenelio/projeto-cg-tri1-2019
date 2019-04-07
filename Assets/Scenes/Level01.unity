@@ -1436,7 +1436,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1512650429}
+      - m_Target: {fileID: 1512650433}
         m_MethodName: LoadScene
         m_Mode: 5
         m_Arguments:
@@ -13115,7 +13115,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1512650429}
+      - m_Target: {fileID: 1512650433}
         m_MethodName: LoadScene
         m_Mode: 5
         m_Arguments:
@@ -17180,6 +17180,7 @@ GameObject:
   - component: {fileID: 1512650429}
   - component: {fileID: 1512650431}
   - component: {fileID: 1512650432}
+  - component: {fileID: 1512650433}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -17257,6 +17258,18 @@ MonoBehaviour:
     coinPickup: {fileID: 8300000, guid: aae7ed0278430244ab9e192137caec66, type: 3}
     fail: {fileID: 8300000, guid: 30524ba5c492fd44293e398d132619d0, type: 3}
     levelComplete: {fileID: 8300000, guid: fa5d7b39d1ed6474b95498d259c39932, type: 3}
+--- !u!114 &1512650433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512650428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c6556a4010bc345a140615c2040f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1514207327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17635,7 +17648,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1512650429}
+      - m_Target: {fileID: 1512650433}
         m_MethodName: LoadScene
         m_Mode: 5
         m_Arguments:
@@ -18582,7 +18595,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1512650429}
+      - m_Target: {fileID: 1512650433}
         m_MethodName: LoadScene
         m_Mode: 5
         m_Arguments:

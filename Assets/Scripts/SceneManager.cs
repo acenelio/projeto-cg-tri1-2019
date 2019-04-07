@@ -42,10 +42,6 @@ public class SceneManager : MonoBehaviour
         TapeSpeed = new Vector3(value, TapeSpeed.y, TapeSpeed.z);
     }
 
-    public void LoadScene(string sceneName) {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
-    }  
-
     public void ShowLevelCompletePanel() {
         uiComponents.dialogs.LCPanel.SetActive(true);
         uiComponents.dialogs.LCTxtScore.text = "" + sceneData.coinCount;
