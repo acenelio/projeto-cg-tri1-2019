@@ -50,4 +50,9 @@ public class SceneManager : MonoBehaviour
         uiComponents.dialogs.LCPanel.SetActive(true);
         uiComponents.dialogs.LCTxtScore.text = "" + sceneData.coinCount;
     }
+
+    public void ShowGameOverPanel() {
+        uiComponents.dialogs.GOPanel.SetActive(true);
+        uiComponents.dialogs.GOTxtScore.text = "" + sceneData.coinCount;
+    }
 }

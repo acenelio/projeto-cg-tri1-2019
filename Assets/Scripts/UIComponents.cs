@@ -21,6 +21,8 @@ public class UIComponents
     public class Dialogs {
         public GameObject LCPanel;
         public Text LCTxtScore;
+        public GameObject GOPanel;
+        public Text GOTxtScore;
     }
 
     public Hud hud;
