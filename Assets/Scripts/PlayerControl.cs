@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    Rigidbody2D rb;
+
+    void Start() {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    void Impulse(float force) {
+        rb.velocity = Vector3.zero;
+        rb.AddForce(Vector3.up * force, ForceMode2D.Impulse);
+    }
 
     void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("Coin")) {
@@ -11,6 +21,7 @@ public class PlayerControl : MonoBehaviour
             AudioManager.instance.PlaySoundCoinPickup(other.gameObject);
             Destroy(other.gameObject);
             SceneManager.instance.IncrementCoinCount();
+            Impulse(10);
         }
         else if (other.gameObject.CompareTag("ForbiddenArea")) {
             StopMusicAndTape();
