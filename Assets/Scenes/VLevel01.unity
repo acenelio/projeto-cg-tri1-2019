@@ -1171,6 +1171,7 @@ GameObject:
   - component: {fileID: 1017706052}
   - component: {fileID: 1017706051}
   - component: {fileID: 1017706050}
+  - component: {fileID: 1017706057}
   m_Layer: 8
   m_Name: FatBird
   m_TagString: Player
@@ -1321,6 +1322,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1017706057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017706049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fbb9d94f09d9de4cb9e23eb3953237b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 7205417850972215223, guid: 187ff68524fcd0a40ba170c909445112,
+    type: 3}
 --- !u!1 &1055307920
 GameObject:
   m_ObjectHideFlags: 0
