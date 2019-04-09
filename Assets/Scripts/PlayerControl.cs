@@ -30,7 +30,7 @@ public class PlayerControl : MonoBehaviour
         else if (other.gameObject.CompareTag("GiftBox")) {
             StopMusicAndTape();
             AudioManager.instance.PlaySoundLevelComplete(gameObject);
-            Destroy(gameObject);
+            DestroyPlayerObject();
             SceneManager.instance.ShowLevelCompletePanel();
         }
         else if (other.gameObject.layer ==  LayerMask.NameToLayer("Enemies")) {
@@ -47,7 +47,12 @@ public class PlayerControl : MonoBehaviour
     void KillPlayer() {
         SFXManager.instance.ShowDieParticles(gameObject);
         AudioManager.instance.PlaySoundFail(gameObject);
-        Destroy(gameObject);
+        DestroyPlayerObject();
         SceneManager.instance.ShowGameOverPanel();
+    }
+
+    void DestroyPlayerObject() {
+        Camera.main.GetComponent<CameraFollow>().TurnOff();
+        Destroy(gameObject);
     }
 }
