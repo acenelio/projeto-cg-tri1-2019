@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class FollowTouch : MonoBehaviour
 {
-    public GameObject particle;
-
+    public float lerpRate = 4f;
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButton("Fire1"))
         {
             Vector3 aux = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector3 pos = new Vector3(aux.x, aux.y, 0f);
-            Instantiate(particle, pos, transform.rotation);
+
+            Vector3 initialPosition = transform.position;
+            Vector3 finalPosition = new Vector3(aux.x, transform.position.y, transform.position.z);
+
+            transform.position = Vector3.Lerp(initialPosition, finalPosition, lerpRate * Time.deltaTime);
         }
     }
 }
