@@ -18008,6 +18008,7 @@ MonoBehaviour:
   uiComponents:
     hud:
       txtCoinCount: {fileID: 178764692}
+      txtLifeCount: {fileID: 1256602531}
       panelHud: {fileID: 1985796552}
     levelCompletePanel:
       txtScore: {fileID: 386471582}

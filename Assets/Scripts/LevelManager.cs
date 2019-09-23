@@ -33,8 +33,17 @@ public class LevelManager : MonoBehaviour
         sceneData.coinCount++;
     }
 
+    public void DecrementLifeCount() {
+        sceneData.lifeCount--;
+    }
+
+    public int GetLifeCount() {
+        return sceneData.lifeCount;
+    }
+
     void DisplayHudData() {
         uiComponents.hud.txtCoinCount.text = "x " + sceneData.coinCount;
+        uiComponents.hud.txtLifeCount.text = "x " + sceneData.lifeCount;
     }
 
     public void SetTapeSpeed(float value) {

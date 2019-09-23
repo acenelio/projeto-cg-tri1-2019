@@ -13,6 +13,9 @@ public class UIComponents
         [Header("Text")]
         public Text txtCoinCount;
 
+        [Header("Text")]
+        public Text txtLifeCount; // NAO ESQUECA DE ARRASTAR O OBJETO PRA CA NO UNITY
+
         [Header("Other")]
         public GameObject panelHud;
     }
